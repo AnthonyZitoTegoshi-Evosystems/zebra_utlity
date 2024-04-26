@@ -45,7 +45,7 @@ public class ZebrautilityPlugin implements FlutterPlugin, MethodCallHandler, Act
             Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
             result.success(Printer.getZplCode(decodedByte, false, rotation));
         } catch (Exception e) {
-            result.error("-1", "Error", null);
+            result.error("-1", /*"Error"*/e.toString(), null);
         }
     }
 
