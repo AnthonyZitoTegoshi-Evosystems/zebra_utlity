@@ -33,14 +33,14 @@ android {
 
 
     packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE.txt'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/DEPENDENCIES'
+        //exclude 'META-INF/LICENSE.txt'
+        //exclude 'META-INF/NOTICE.txt'
+        //exclude 'META-INF/NOTICE'
+        //exclude 'META-INF/LICENSE'
+        //exclude 'META-INF/DEPENDENCIES'
     }
 
 }
 dependencies{
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 }
